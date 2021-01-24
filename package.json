@@ -1,13 +1,16 @@
 {
   "name": "ember-unique-id-helper-polyfill",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Polyfill for RFC 659.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "polyfill",
+    "unique-id",
+    "helper"
   ],
-  "repository": "",
+  "repository": "https://github.com/ctjhoa/ember-unique-id-helper-polyfill",
   "license": "MIT",
-  "author": "",
+  "author": "Camille Tjhoa <camille.tjhoa@outlook.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
