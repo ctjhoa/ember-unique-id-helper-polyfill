@@ -1,7 +1,7 @@
 ember-unique-id-helper-polyfill
 ==============================================================================
 
-[Short description of the addon.]
+This addon provides a polyfill for unique-id helper as described in [RFC 659](https://github.com/emberjs/rfcs/pull/659).
 
 
 Compatibility
@@ -23,7 +23,18 @@ ember install ember-unique-id-helper-polyfill
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+Example:
+```hbs
+{{#let (unique-id) as |emailId|}}
+  <label for={{emailId}}>Email address</label>
+  <input id={{emailId}} type="email" />
+{{/let}}
+
+{{#let (unique-id) as |passwordId|}}
+  <label for={{passwordId}}>password</label>
+  <input id={{passwordId}} type="password" />
+{{/let}}
+```
 
 
 Contributing
