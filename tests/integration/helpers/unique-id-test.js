@@ -17,4 +17,19 @@ module('Integration | Helper | unique-id', function (hooks) {
 
     assert.notEqual(firstId, secondId);
   });
+
+  test('it only generates unique ids that start with a letter', async function (assert) {
+    let iterations = 1000;
+    let regExpLetterStart = /^[a-z]/;
+
+    assert.expect(iterations);
+
+    for (let i = 0; i < iterations; i++) {
+      await render(hbs`{{unique-id}}`);
+
+      let uniqueId = this.element.textContent.trim();
+
+      assert.true(regExpLetterStart.test(uniqueId));
+    }
+  });
 });
