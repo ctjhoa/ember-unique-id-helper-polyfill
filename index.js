@@ -15,7 +15,7 @@ module.exports = {
 
     if (this.hasNativeIdHelper && this.parent === this.project) {
       let message =
-        'The `{{id}}` helper is available natively since Ember 4.4.0-beta.1. You can remove `ember-unique-id-helper-polyfill` from your `package.json`.';
+        'The `{{unique-id}}` helper is available natively since Ember 4.4.0-beta.1. You can remove `ember-unique-id-helper-polyfill` from your `package.json`.';
 
       this.ui.writeDeprecateLine(message);
     }
