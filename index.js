@@ -17,7 +17,7 @@ module.exports = {
       let message =
         'The `{{unique-id}}` helper is available natively since Ember 4.4.0-beta.1. You can remove `ember-unique-id-helper-polyfill` from your `package.json`.';
 
-      this.ui.writeDeprecateLine(message);
+      this.ui.writeWarnLine(message);
     }
   },
 
